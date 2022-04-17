@@ -1,0 +1,1105 @@
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '157929398076502766801650213511'), ('oauth_timestamp', '1650213511'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=157929398076502766801650213511&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213511&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D157929398076502766801650213511%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213511%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: v5L7sX3IcjoCXE3EUyxP0vzOCZw=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="157929398076502766801650213511", oauth_timestamp="1650213511", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="v5L7sX3IcjoCXE3EUyxP0vzOCZw%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received status: 1515731421767294978
+DEBUG:tweepy.streaming:Received status: 1515731422929031169
+DEBUG:tweepy.streaming:Received status: 1515731423659012103
+DEBUG:tweepy.streaming:Received status: 1515731424078348294
+DEBUG:tweepy.streaming:Received status: 1515731424254611469
+DEBUG:tweepy.streaming:Received status: 1515731424472535041
+DEBUG:tweepy.streaming:Received status: 1515731424661360652
+DEBUG:tweepy.streaming:Received status: 1515731424812404738
+DEBUG:tweepy.streaming:Received status: 1515731425122832389
+DEBUG:tweepy.streaming:Received status: 1515731425215057923
+DEBUG:tweepy.streaming:Received status: 1515731426716663808
+DEBUG:tweepy.streaming:Received status: 1515731427077550080
+DEBUG:tweepy.streaming:Received status: 1515731427177938948
+DEBUG:tweepy.streaming:Received status: 1515731427329208323
+DEBUG:tweepy.streaming:Received status: 1515731427320545290
+DEBUG:tweepy.streaming:Received status: 1515731427500953608
+DEBUG:tweepy.streaming:Received status: 1515731429308649485
+DEBUG:tweepy.streaming:Received status: 1515731429904326657
+DEBUG:tweepy.streaming:Received status: 1515731430017486856
+DEBUG:tweepy.streaming:Received status: 1515731430160150539
+DEBUG:tweepy.streaming:Received status: 1515731430223093767
+DEBUG:tweepy.streaming:Received status: 1515731430776598528
+DEBUG:tweepy.streaming:Received status: 1515731430936088580
+DEBUG:tweepy.streaming:Received status: 1515731431787540486
+DEBUG:tweepy.streaming:Received status: 1515731432655798272
+DEBUG:tweepy.streaming:Received status: 1515731432932478976
+DEBUG:tweepy.streaming:Received status: 1515731434765533185
+DEBUG:tweepy.streaming:Received status: 1515731435004784642
+DEBUG:tweepy.streaming:Received status: 1515731435688243202
+DEBUG:tweepy.streaming:Received status: 1515731436799774727
+DEBUG:tweepy.streaming:Received status: 1515731437378408451
+DEBUG:tweepy.streaming:Received status: 1515731438204821504
+DEBUG:tweepy.streaming:Received status: 1515731438649458690
+DEBUG:tweepy.streaming:Received status: 1515731440562245632
+DEBUG:tweepy.streaming:Received status: 1515731441296019457
+DEBUG:tweepy.streaming:Received status: 1515731441233051650
+DEBUG:tweepy.streaming:Received status: 1515731442562699271
+DEBUG:tweepy.streaming:Received status: 1515731442503929859
+DEBUG:tweepy.streaming:Received status: 1515731442600488961
+DEBUG:tweepy.streaming:Received status: 1515731442713698307
+DEBUG:tweepy.streaming:Received status: 1515731442726326276
+DEBUG:tweepy.streaming:Received status: 1515731442734665737
+DEBUG:tweepy.streaming:Received status: 1515731442768171009
+DEBUG:tweepy.streaming:Received status: 1515731443292545035
+DEBUG:tweepy.streaming:Received status: 1515731443661651970
+DEBUG:tweepy.streaming:Received status: 1515731444265484288
+DEBUG:tweepy.streaming:Received status: 1515731444890361863
+DEBUG:tweepy.streaming:Received status: 1515731445200867332
+DEBUG:tweepy.streaming:Received status: 1515731445742018563
+DEBUG:tweepy.streaming:Received status: 1515731445855236107
+DEBUG:tweepy.streaming:Received status: 1515731447457452040
+DEBUG:tweepy.streaming:Received status: 1515731447709315073
+DEBUG:tweepy.streaming:Received status: 1515731447789015041
+DEBUG:tweepy.streaming:Received status: 1515731447574892549
+DEBUG:tweepy.streaming:Received status: 1515731447755284487
+DEBUG:tweepy.streaming:Received status: 1515731447843237888
+DEBUG:tweepy.streaming:Received status: 1515731447696474119
+DEBUG:tweepy.streaming:Received status: 1515731448732467210
+DEBUG:tweepy.streaming:Received status: 1515731449197916160
+DEBUG:tweepy.streaming:Received status: 1515731449428725761
+DEBUG:tweepy.streaming:Received status: 1515731449726619653
+DEBUG:tweepy.streaming:Received status: 1515731449999241225
+DEBUG:tweepy.streaming:Received status: 1515731449957302277
+DEBUG:tweepy.streaming:Received status: 1515731450275971073
+DEBUG:tweepy.streaming:Received status: 1515731450460524544
+DEBUG:tweepy.streaming:Received status: 1515731451463016458
+DEBUG:tweepy.streaming:Received status: 1515731452754866180
+DEBUG:tweepy.streaming:Received status: 1515731453140680706
+DEBUG:tweepy.streaming:Received status: 1515731453312655365
+DEBUG:tweepy.streaming:Received status: 1515731453388197888
+DEBUG:tweepy.streaming:Received status: 1515731453820215300
+DEBUG:tweepy.streaming:Received status: 1515731454835437569
+DEBUG:tweepy.streaming:Received status: 1515731454864547846
+DEBUG:tweepy.streaming:Received status: 1515731455099375619
+DEBUG:tweepy.streaming:Received status: 1515731455195897865
+DEBUG:tweepy.streaming:Received status: 1515731455623966722
+DEBUG:tweepy.streaming:Received status: 1515731455783182343
+DEBUG:tweepy.streaming:Received status: 1515731455695101952
+DEBUG:tweepy.streaming:Received status: 1515731455871270918
+DEBUG:tweepy.streaming:Received status: 1515731456076746753
+DEBUG:tweepy.streaming:Received status: 1515731456324165636
+DEBUG:tweepy.streaming:Received status: 1515731456580014083
+DEBUG:tweepy.streaming:Received status: 1515731456630304772
+DEBUG:tweepy.streaming:Received status: 1515731456739487745
+DEBUG:tweepy.streaming:Received status: 1515731457100042243
+DEBUG:tweepy.streaming:Received status: 1515731457414615044
+DEBUG:tweepy.streaming:Received status: 1515731458689839107
+DEBUG:tweepy.streaming:Received status: 1515731458949718019
+DEBUG:tweepy.streaming:Received status: 1515731458870153219
+DEBUG:tweepy.streaming:Received status: 1515731459860013061
+DEBUG:tweepy.streaming:Received status: 1515731460182921216
+DEBUG:tweepy.streaming:Received status: 1515731461722234886
+DEBUG:tweepy.streaming:Received status: 1515731461919641603
+DEBUG:tweepy.streaming:Received status: 1515731462238228493
+DEBUG:tweepy.streaming:Received status: 1515731462489739264
+DEBUG:tweepy.streaming:Received status: 1515731463098011652
+DEBUG:tweepy.streaming:Received status: 1515731463836438540
+DEBUG:tweepy.streaming:Received status: 1515731464339533828
+DEBUG:tweepy.streaming:Received status: 1515731464863821825
+DEBUG:tweepy.streaming:Received status: 1515731466398814212
+DEBUG:tweepy.streaming:Received status: 1515731466424004609
+DEBUG:tweepy.streaming:Received status: 1515731468034912257
+DEBUG:tweepy.streaming:Received status: 1515731468508557314
+DEBUG:tweepy.streaming:Received status: 1515731468995248129
+DEBUG:tweepy.streaming:Received status: 1515731469850726401
+DEBUG:tweepy.streaming:Received status: 1515731470001881095
+DEBUG:tweepy.streaming:Received status: 1515731470660292609
+DEBUG:tweepy.streaming:Received status: 1515731471037870088
+DEBUG:tweepy.streaming:Received status: 1515731472430379011
+DEBUG:tweepy.streaming:Received status: 1515731472430383108
+DEBUG:tweepy.streaming:Received status: 1515731472644452353
+DEBUG:tweepy.streaming:Received status: 1515731472682037260
+DEBUG:tweepy.streaming:Received status: 1515731473428623365
+DEBUG:tweepy.streaming:Received status: 1515731473579577352
+DEBUG:tweepy.streaming:Received status: 1515731473017761792
+DEBUG:tweepy.streaming:Received status: 1515731473566896128
+DEBUG:tweepy.streaming:Received status: 1515731474988814338
+DEBUG:tweepy.streaming:Received status: 1515731474779189249
+DEBUG:tweepy.streaming:Received status: 1515731475324411907
+DEBUG:tweepy.streaming:Received status: 1515731476884729857
+DEBUG:tweepy.streaming:Received status: 1515731477379657732
+DEBUG:tweepy.streaming:Received status: 1515731477471936513
+DEBUG:tweepy.streaming:Received status: 1515731477593473025
+DEBUG:tweepy.streaming:Received status: 1515731478499393544
+DEBUG:tweepy.streaming:Received status: 1515731480340795398
+DEBUG:tweepy.streaming:Received status: 1515731481951453189
+DEBUG:tweepy.streaming:Received status: 1515731482236575755
+DEBUG:tweepy.streaming:Received status: 1515731482530172935
+DEBUG:tweepy.streaming:Received status: 1515731483566264325
+DEBUG:tweepy.streaming:Received status: 1515731483935264768
+DEBUG:tweepy.streaming:Received status: 1515731483935363073
+DEBUG:tweepy.streaming:Received status: 1515731484367540226
+DEBUG:tweepy.streaming:Received status: 1515731485172674565
+DEBUG:tweepy.streaming:Received status: 1515731485411713024
+DEBUG:tweepy.streaming:Received status: 1515731485684346887
+DEBUG:tweepy.streaming:Received status: 1515731486246256641
+DEBUG:tweepy.streaming:Received status: 1515731486581747716
+DEBUG:tweepy.streaming:Received status: 1515731486871367682
+DEBUG:tweepy.streaming:Received status: 1515731487894786051
+DEBUG:tweepy.streaming:Received status: 1515731488309927946
+DEBUG:tweepy.streaming:Received status: 1515731488548999171
+DEBUG:tweepy.streaming:Received status: 1515731488486182919
+DEBUG:tweepy.streaming:Received status: 1515731488582807553
+DEBUG:tweepy.streaming:Received status: 1515731489144688642
+DEBUG:tweepy.streaming:Received status: 1515731489534758920
+DEBUG:tweepy.streaming:Received status: 1515731489132064768
+DEBUG:tweepy.streaming:Received status: 1515731490587426825
+DEBUG:tweepy.streaming:Received status: 1515731492017930240
+DEBUG:tweepy.streaming:Received status: 1515731493049540611
+DEBUG:tweepy.streaming:Received status: 1515731493418684426
+DEBUG:tweepy.streaming:Received status: 1515731493804515342
+DEBUG:tweepy.streaming:Received status: 1515731494362234883
+DEBUG:tweepy.streaming:Received status: 1515731495029469184
+DEBUG:tweepy.streaming:Received status: 1515731495587094537
+DEBUG:tweepy.streaming:Received status: 1515731495918321668
+DEBUG:tweepy.streaming:Received status: 1515731496270798851
+DEBUG:tweepy.streaming:Received status: 1515731496669265926
+DEBUG:tweepy.streaming:Received status: 1515731497038229507
+DEBUG:tweepy.streaming:Received status: 1515731497000579082
+DEBUG:tweepy.streaming:Received status: 1515731498422480896
+DEBUG:tweepy.streaming:Received status: 1515731499001204740
+DEBUG:tweepy.streaming:Received status: 1515731499265449993
+DEBUG:tweepy.streaming:Received status: 1515731499533975554
+DEBUG:tweepy.streaming:Received status: 1515731499945017349
+DEBUG:tweepy.streaming:Received status: 1515731500041388036
+DEBUG:tweepy.streaming:Received status: 1515731499923955723
+DEBUG:tweepy.streaming:Received status: 1515731500548956166
+DEBUG:tweepy.streaming:Received status: 1515731501203161088
+DEBUG:tweepy.streaming:Received status: 1515731502696390665
+DEBUG:tweepy.streaming:Received status: 1515731502595772417
+DEBUG:tweepy.streaming:Received status: 1515731503027658758
+DEBUG:tweepy.streaming:Received status: 1515731503157764101
+DEBUG:tweepy.streaming:Received status: 1515731503564697603
+DEBUG:tweepy.streaming:Received status: 1515731503979794433
+DEBUG:tweepy.streaming:Received status: 1515731505712177152
+DEBUG:tweepy.streaming:Received status: 1515731506731356171
+DEBUG:tweepy.streaming:Received status: 1515731507029196805
+DEBUG:tweepy.streaming:Received status: 1515731507695996936
+DEBUG:tweepy.streaming:Received status: 1515731508455108611
+DEBUG:tweepy.streaming:Received status: 1515731508950142979
+DEBUG:tweepy.streaming:Received status: 1515731510304858123
+DEBUG:tweepy.streaming:Received status: 1515731510669762566
+DEBUG:tweepy.streaming:Received status: 1515731510866984960
+DEBUG:tweepy.streaming:Received status: 1515731511051689984
+DEBUG:tweepy.streaming:Received status: 1515731511512862720
+DEBUG:tweepy.streaming:Received status: 1515731512444039172
+DEBUG:tweepy.streaming:Received status: 1515731512469200918
+DEBUG:tweepy.streaming:Received status: 1515731513190486016
+DEBUG:tweepy.streaming:Received status: 1515731514423603209
+DEBUG:tweepy.streaming:Received status: 1515731514562125824
+DEBUG:tweepy.streaming:Received status: 1515731514239045639
+DEBUG:tweepy.streaming:Received status: 1515731515015057408
+DEBUG:tweepy.streaming:Received status: 1515731515698827268
+DEBUG:tweepy.streaming:Received status: 1515731516080410627
+DEBUG:tweepy.streaming:Received status: 1515731516520898571
+DEBUG:tweepy.streaming:Received status: 1515731516923559939
+DEBUG:tweepy.streaming:Received status: 1515731517267349505
+DEBUG:tweepy.streaming:Received status: 1515731517053542405
+DEBUG:tweepy.streaming:Received status: 1515731517758136320
+DEBUG:tweepy.streaming:Received status: 1515731518135705603
+DEBUG:tweepy.streaming:Received status: 1515731519003926531
+DEBUG:tweepy.streaming:Received status: 1515731519410741256
+DEBUG:tweepy.streaming:Received status: 1515731519377227776
+DEBUG:tweepy.streaming:Received status: 1515731520006373376
+DEBUG:tweepy.streaming:Received status: 1515731520459358212
+DEBUG:tweepy.streaming:Received status: 1515731520614506501
+DEBUG:tweepy.streaming:Received status: 1515731522191605763
+DEBUG:tweepy.streaming:Received status: 1515731523835777036
+DEBUG:tweepy.streaming:Received status: 1515731524305530882
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '79715323072467408951650213581'), ('oauth_timestamp', '1650213581'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=79715323072467408951650213581&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213581&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D79715323072467408951650213581%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213581%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: 8zLvBvM2ofwRIuud6iVYoZLXJhk=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="79715323072467408951650213581", oauth_timestamp="1650213581", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="8zLvBvM2ofwRIuud6iVYoZLXJhk%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received status: 1515731714190213124
+DEBUG:tweepy.streaming:Received status: 1515731714986885120
+DEBUG:tweepy.streaming:Received status: 1515731715481903105
+DEBUG:tweepy.streaming:Received status: 1515731716106854405
+DEBUG:tweepy.streaming:Received status: 1515731717419634701
+DEBUG:tweepy.streaming:Received status: 1515731717704794114
+DEBUG:tweepy.streaming:Received status: 1515731717759414285
+DEBUG:tweepy.streaming:Received status: 1515731718187241477
+DEBUG:tweepy.streaming:Received status: 1515731718313070594
+DEBUG:tweepy.streaming:Received status: 1515731717918760962
+DEBUG:tweepy.streaming:Received status: 1515731719747383296
+DEBUG:tweepy.streaming:Received status: 1515731720292741123
+DEBUG:tweepy.streaming:Received status: 1515731721018257408
+DEBUG:tweepy.streaming:Received status: 1515731721865637896
+DEBUG:tweepy.streaming:Received status: 1515731722402508803
+DEBUG:tweepy.streaming:Received status: 1515731722989707271
+DEBUG:tweepy.streaming:Received status: 1515731723346137096
+DEBUG:tweepy.streaming:Received status: 1515731724382048258
+DEBUG:tweepy.streaming:Received status: 1515731724268888069
+DEBUG:tweepy.streaming:Received status: 1515731725221040128
+DEBUG:tweepy.streaming:Received status: 1515731726991044620
+DEBUG:tweepy.streaming:Received status: 1515731728098545664
+DEBUG:tweepy.streaming:Received status: 1515731728219922439
+DEBUG:tweepy.streaming:Received status: 1515731729465724933
+DEBUG:tweepy.streaming:Received status: 1515731729599938562
+DEBUG:tweepy.streaming:Received status: 1515731730153541640
+DEBUG:tweepy.streaming:Received status: 1515731730543661058
+DEBUG:tweepy.streaming:Received status: 1515731731080527872
+DEBUG:tweepy.streaming:Received status: 1515731731277828101
+DEBUG:tweepy.streaming:Received status: 1515731731416072195
+DEBUG:tweepy.streaming:Received status: 1515731731764191234
+DEBUG:tweepy.streaming:Received status: 1515731731776630785
+DEBUG:tweepy.streaming:Received status: 1515731731973873666
+DEBUG:tweepy.streaming:Received status: 1515731732082929676
+DEBUG:tweepy.streaming:Received status: 1515731734272258048
+DEBUG:tweepy.streaming:Received status: 1515731734377156612
+DEBUG:tweepy.streaming:Received status: 1515731734599553034
+DEBUG:tweepy.streaming:Received status: 1515731734662299654
+DEBUG:tweepy.streaming:Received status: 1515731734737952775
+DEBUG:tweepy.streaming:Received status: 1515731735102775304
+DEBUG:tweepy.streaming:Received status: 1515731735417434112
+DEBUG:tweepy.streaming:Received status: 1515731736734453785
+DEBUG:tweepy.streaming:Received status: 1515731738718265344
+DEBUG:tweepy.streaming:Received status: 1515731739389345794
+DEBUG:tweepy.streaming:Received status: 1515731739347410948
+DEBUG:tweepy.streaming:Received status: 1515731740278599684
+DEBUG:tweepy.streaming:Received status: 1515731741100679170
+DEBUG:tweepy.streaming:Received status: 1515731741893406724
+DEBUG:tweepy.streaming:Received status: 1515731742023458820
+DEBUG:tweepy.streaming:Received status: 1515731742140760064
+DEBUG:tweepy.streaming:Received status: 1515731742060998656
+DEBUG:tweepy.streaming:Received status: 1515731742904266759
+DEBUG:tweepy.streaming:Received status: 1515731744976220164
+DEBUG:tweepy.streaming:Received status: 1515731745571713027
+DEBUG:tweepy.streaming:Received status: 1515731746624573447
+DEBUG:tweepy.streaming:Received status: 1515731746351767560
+DEBUG:tweepy.streaming:Received status: 1515731746733580288
+DEBUG:tweepy.streaming:Received status: 1515731747119542278
+DEBUG:tweepy.streaming:Received status: 1515731743990591494
+DEBUG:tweepy.streaming:Received status: 1515731747870322690
+DEBUG:tweepy.streaming:Received status: 1515731748344287244
+DEBUG:tweepy.streaming:Received status: 1515731748381995016
+DEBUG:tweepy.streaming:Received status: 1515731749052973059
+DEBUG:tweepy.streaming:Received status: 1515731749048930305
+DEBUG:tweepy.streaming:Received status: 1515731749204107265
+DEBUG:tweepy.streaming:Received status: 1515731749480841226
+DEBUG:tweepy.streaming:Received status: 1515731749615325187
+DEBUG:tweepy.streaming:Received status: 1515731749493477380
+DEBUG:tweepy.streaming:Received status: 1515731750512742415
+DEBUG:tweepy.streaming:Received status: 1515731751632519175
+DEBUG:tweepy.streaming:Received status: 1515731752433594371
+DEBUG:tweepy.streaming:Received status: 1515731752492449800
+DEBUG:tweepy.streaming:Received status: 1515731753025294337
+DEBUG:tweepy.streaming:Received status: 1515731754027556868
+DEBUG:tweepy.streaming:Received status: 1515731754480451590
+DEBUG:tweepy.streaming:Received status: 1515731755554148355
+DEBUG:tweepy.streaming:Received status: 1515731755998793728
+DEBUG:tweepy.streaming:Received status: 1515731756913152008
+DEBUG:tweepy.streaming:Received status: 1515731759303835648
+DEBUG:tweepy.streaming:Received status: 1515731759891042304
+DEBUG:tweepy.streaming:Received status: 1515731760117649414
+DEBUG:tweepy.streaming:Received status: 1515731760713125890
+DEBUG:tweepy.streaming:Received status: 1515731761371643904
+DEBUG:tweepy.streaming:Received status: 1515731761241620481
+DEBUG:tweepy.streaming:Received status: 1515731761602387971
+DEBUG:tweepy.streaming:Received status: 1515731762227425280
+DEBUG:tweepy.streaming:Received status: 1515731762974195713
+DEBUG:tweepy.streaming:Received status: 1515731763104034825
+DEBUG:tweepy.streaming:Received status: 1515731763192123395
+DEBUG:tweepy.streaming:Received status: 1515731763427000332
+DEBUG:tweepy.streaming:Received status: 1515731764781756422
+DEBUG:tweepy.streaming:Received status: 1515731764743970817
+DEBUG:tweepy.streaming:Received status: 1515731765339508741
+DEBUG:tweepy.streaming:Received status: 1515731766513999880
+DEBUG:tweepy.streaming:Received status: 1515731767537598466
+DEBUG:tweepy.streaming:Received status: 1515731767969333251
+DEBUG:tweepy.streaming:Received status: 1515731768501972992
+DEBUG:tweepy.streaming:Received status: 1515731768883785731
+DEBUG:tweepy.streaming:Received status: 1515731769282211844
+DEBUG:tweepy.streaming:Received status: 1515731769617960963
+DEBUG:tweepy.streaming:Received status: 1515731770196754432
+DEBUG:tweepy.streaming:Received status: 1515731770888663046
+DEBUG:tweepy.streaming:Received status: 1515731771328892929
+DEBUG:tweepy.streaming:Received status: 1515731770310008833
+DEBUG:tweepy.streaming:Received status: 1515731771622625283
+DEBUG:tweepy.streaming:Received status: 1515731771631206400
+DEBUG:tweepy.streaming:Received status: 1515731772092428288
+DEBUG:tweepy.streaming:Received status: 1515731772847591427
+DEBUG:tweepy.streaming:Received status: 1515731773572931587
+DEBUG:tweepy.streaming:Received status: 1515731773774254082
+DEBUG:tweepy.streaming:Received status: 1515731774885703681
+DEBUG:tweepy.streaming:Received status: 1515731775221542913
+DEBUG:tweepy.streaming:Received status: 1515731775397539841
+DEBUG:tweepy.streaming:Received status: 1515731775405924353
+DEBUG:tweepy.streaming:Received status: 1515731775686955020
+DEBUG:tweepy.streaming:Received status: 1515731776273993729
+DEBUG:tweepy.streaming:Received status: 1515731777599717379
+DEBUG:tweepy.streaming:Received status: 1515731777658273797
+DEBUG:tweepy.streaming:Received status: 1515731777708769282
+DEBUG:tweepy.streaming:Received status: 1515731777843007489
+DEBUG:tweepy.streaming:Received status: 1515731778090278913
+DEBUG:tweepy.streaming:Received status: 1515731778681679882
+DEBUG:tweepy.streaming:Received status: 1515731779105300481
+DEBUG:tweepy.streaming:Received status: 1515731779893841922
+DEBUG:tweepy.streaming:Received status: 1515731780078243844
+DEBUG:tweepy.streaming:Received status: 1515731780153880578
+DEBUG:tweepy.streaming:Received status: 1515731780556447748
+DEBUG:tweepy.streaming:Received status: 1515731781709963272
+DEBUG:tweepy.streaming:Received status: 1515731782330687492
+DEBUG:tweepy.streaming:Received status: 1515731782431297543
+DEBUG:tweepy.streaming:Received status: 1515731782880182274
+DEBUG:tweepy.streaming:Received status: 1515731782984998917
+DEBUG:tweepy.streaming:Received status: 1515731782997618695
+DEBUG:tweepy.streaming:Received status: 1515731784587259907
+DEBUG:tweepy.streaming:Received status: 1515731784637419520
+DEBUG:tweepy.streaming:Received status: 1515731785002323971
+DEBUG:tweepy.streaming:Received status: 1515731785308512263
+DEBUG:tweepy.streaming:Received status: 1515731785505820673
+DEBUG:tweepy.streaming:Received status: 1515731786898280456
+DEBUG:tweepy.streaming:Received status: 1515731787967725575
+DEBUG:tweepy.streaming:Received status: 1515731787850395658
+DEBUG:tweepy.streaming:Received status: 1515731789502943237
+DEBUG:tweepy.streaming:Received status: 1515731790018793488
+DEBUG:tweepy.streaming:Received status: 1515731790614437893
+DEBUG:tweepy.streaming:Received status: 1515731790874681347
+DEBUG:tweepy.streaming:Received status: 1515731791205728257
+DEBUG:tweepy.streaming:Received status: 1515731791898099714
+DEBUG:tweepy.streaming:Received status: 1515731791990206473
+DEBUG:tweepy.streaming:Received status: 1515731792430616577
+DEBUG:tweepy.streaming:Received status: 1515731792438902784
+DEBUG:tweepy.streaming:Received status: 1515731793277714433
+DEBUG:tweepy.streaming:Received status: 1515731793462312962
+DEBUG:tweepy.streaming:Received status: 1515731794607411206
+DEBUG:tweepy.streaming:Received status: 1515731795186229249
+DEBUG:tweepy.streaming:Received status: 1515731795555360768
+DEBUG:tweepy.streaming:Received status: 1515731795832188935
+DEBUG:tweepy.streaming:Received status: 1515731795924426764
+DEBUG:tweepy.streaming:Received status: 1515731796096434188
+DEBUG:tweepy.streaming:Received status: 1515731796335468546
+DEBUG:tweepy.streaming:Received status: 1515731796528406532
+DEBUG:tweepy.streaming:Received status: 1515731797103063052
+DEBUG:tweepy.streaming:Received status: 1515731797899886595
+DEBUG:tweepy.streaming:Received status: 1515731797988028418
+DEBUG:tweepy.streaming:Received status: 1515731798075981826
+DEBUG:tweepy.streaming:Received status: 1515731799439298560
+DEBUG:tweepy.streaming:Received status: 1515731800684908553
+DEBUG:tweepy.streaming:Received status: 1515731801377226752
+DEBUG:tweepy.streaming:Received status: 1515731801842532360
+DEBUG:tweepy.streaming:Received status: 1515731802094280711
+DEBUG:tweepy.streaming:Received status: 1515731803574841346
+DEBUG:tweepy.streaming:Received status: 1515731803851612171
+DEBUG:tweepy.streaming:Received status: 1515731804300398598
+DEBUG:tweepy.streaming:Received status: 1515731804354924544
+DEBUG:tweepy.streaming:Received status: 1515731805000777730
+DEBUG:tweepy.streaming:Received status: 1515731805265367045
+DEBUG:tweepy.streaming:Received status: 1515731805839765505
+DEBUG:tweepy.streaming:Received status: 1515731806074646528
+DEBUG:tweepy.streaming:Received status: 1515731809006657545
+DEBUG:tweepy.streaming:Received status: 1515731810348683267
+DEBUG:tweepy.streaming:Received status: 1515731811023802373
+DEBUG:tweepy.streaming:Received status: 1515731811200122886
+DEBUG:tweepy.streaming:Received status: 1515731813024608257
+DEBUG:tweepy.streaming:Received status: 1515731814161203204
+DEBUG:tweepy.streaming:Received status: 1515731815008333827
+DEBUG:tweepy.streaming:Received status: 1515731815188865032
+DEBUG:tweepy.streaming:Received status: 1515731816786935813
+DEBUG:tweepy.streaming:Received status: 1515731817827127302
+DEBUG:tweepy.streaming:Received status: 1515731817868967945
+DEBUG:tweepy.streaming:Received status: 1515731818791772165
+DEBUG:tweepy.streaming:Received status: 1515731818989105154
+DEBUG:tweepy.streaming:Received status: 1515731819827642368
+DEBUG:tweepy.streaming:Received status: 1515731818800103429
+DEBUG:tweepy.streaming:Received status: 1515731821379653643
+DEBUG:tweepy.streaming:Received status: 1515731821996126209
+DEBUG:tweepy.streaming:Received status: 1515731821874630657
+DEBUG:tweepy.streaming:Received status: 1515731822449152004
+DEBUG:tweepy.streaming:Received status: 1515731822529093632
+DEBUG:tweepy.streaming:Received status: 1515731822428278789
+DEBUG:tweepy.streaming:Received status: 1515731823246127107
+DEBUG:tweepy.streaming:Received status: 1515731823485198342
+DEBUG:tweepy.streaming:Received status: 1515731823673982983
+DEBUG:tweepy.streaming:Received status: 1515731825448132608
+DEBUG:tweepy.streaming:Received status: 1515731826010214406
+DEBUG:tweepy.streaming:Received status: 1515731827025227783
+DEBUG:tweepy.streaming:Received status: 1515731828195438592
+DEBUG:tweepy.streaming:Received status: 1515731828228988934
+DEBUG:tweepy.streaming:Received status: 1515731829260800000
+DEBUG:tweepy.streaming:Received status: 1515731829864677378
+DEBUG:tweepy.streaming:Received status: 1515731830045093888
+DEBUG:tweepy.streaming:Received status: 1515731830951247873
+DEBUG:tweepy.streaming:Received status: 1515731830984564751
+DEBUG:tweepy.streaming:Received status: 1515731831454326785
+DEBUG:tweepy.streaming:Received status: 1515731832309956619
+DEBUG:tweepy.streaming:Received status: 1515731832955932678
+DEBUG:tweepy.streaming:Received status: 1515731833199239178
+DEBUG:tweepy.streaming:Received status: 1515731833497034765
+DEBUG:tweepy.streaming:Received status: 1515731833710911494
+DEBUG:tweepy.streaming:Received status: 1515731833866051584
+DEBUG:tweepy.streaming:Received status: 1515731835044737038
+DEBUG:tweepy.streaming:Received status: 1515731836227538944
+DEBUG:tweepy.streaming:Received status: 1515731836575514626
+DEBUG:tweepy.streaming:Received status: 1515731838425260038
+DEBUG:tweepy.streaming:Received status: 1515731838802743302
+DEBUG:tweepy.streaming:Received status: 1515731839226466312
+DEBUG:tweepy.streaming:Received status: 1515731839302144002
+DEBUG:tweepy.streaming:Received status: 1515731840920965130
+DEBUG:tweepy.streaming:Received status: 1515731840526553088
+DEBUG:tweepy.streaming:Received status: 1515731842024022019
+DEBUG:tweepy.streaming:Received status: 1515731842137489412
+DEBUG:tweepy.streaming:Received status: 1515731842254712842
+DEBUG:tweepy.streaming:Received status: 1515731842305249282
+DEBUG:tweepy.streaming:Received status: 1515731842313461764
+DEBUG:tweepy.streaming:Received status: 1515731842607075330
+DEBUG:tweepy.streaming:Received status: 1515731843319881728
+DEBUG:tweepy.streaming:Received status: 1515731843207004161
+DEBUG:tweepy.streaming:Received status: 1515731843618062337
+DEBUG:tweepy.streaming:Received status: 1515731844167254022
+DEBUG:tweepy.streaming:Received status: 1515731844733763584
+DEBUG:tweepy.streaming:Received status: 1515731845547233282
+DEBUG:tweepy.streaming:Received status: 1515731846436372488
+DEBUG:tweepy.streaming:Received status: 1515731846507773952
+DEBUG:tweepy.streaming:Received status: 1515731846797090817
+DEBUG:tweepy.streaming:Received status: 1515731847996661763
+DEBUG:tweepy.streaming:Received status: 1515731847908630535
+DEBUG:tweepy.streaming:Received status: 1515731848084795394
+DEBUG:tweepy.streaming:Received status: 1515731849506611201
+DEBUG:tweepy.streaming:Received status: 1515731851280797706
+DEBUG:tweepy.streaming:Received status: 1515731851276603394
+DEBUG:tweepy.streaming:Received status: 1515731851746463744
+DEBUG:tweepy.streaming:Received status: 1515731852065132544
+DEBUG:tweepy.streaming:Received status: 1515731853122101254
+DEBUG:tweepy.streaming:Received status: 1515731854057680897
+DEBUG:tweepy.streaming:Received status: 1515731855005425676
+DEBUG:tweepy.streaming:Received status: 1515731855328260097
+DEBUG:tweepy.streaming:Received status: 1515731856456622082
+DEBUG:tweepy.streaming:Received status: 1515731857035382796
+DEBUG:tweepy.streaming:Received status: 1515731857391984641
+DEBUG:tweepy.streaming:Received status: 1515731857400336390
+DEBUG:tweepy.streaming:Received status: 1515731857622585347
+DEBUG:tweepy.streaming:Received status: 1515731858381750279
+DEBUG:tweepy.streaming:Received status: 1515731859426230283
+DEBUG:tweepy.streaming:Received status: 1515731859509899266
+DEBUG:tweepy.streaming:Received status: 1515731859849814022
+DEBUG:tweepy.streaming:Received status: 1515731860063768588
+DEBUG:tweepy.streaming:Received status: 1515731860432691205
+DEBUG:tweepy.streaming:Received status: 1515731860566982660
+DEBUG:tweepy.streaming:Received status: 1515731861292687366
+DEBUG:tweepy.streaming:Received status: 1515731862106300423
+DEBUG:tweepy.streaming:Received status: 1515731862165069840
+DEBUG:tweepy.streaming:Received status: 1515731861955391498
+DEBUG:tweepy.streaming:Received status: 1515731863121317889
+DEBUG:tweepy.streaming:Received status: 1515731863742164992
+DEBUG:tweepy.streaming:Received status: 1515731864686063616
+DEBUG:tweepy.streaming:Received status: 1515731865554067468
+DEBUG:tweepy.streaming:Received status: 1515731865646383109
+DEBUG:tweepy.streaming:Received status: 1515731866665553924
+DEBUG:tweepy.streaming:Received status: 1515731866602639370
+DEBUG:tweepy.streaming:Received status: 1515731867022069771
+DEBUG:tweepy.streaming:Received status: 1515731867462422541
+DEBUG:tweepy.streaming:Received status: 1515731868322344960
+DEBUG:tweepy.streaming:Received status: 1515731868687216646
+DEBUG:tweepy.streaming:Received status: 1515731868938915840
+DEBUG:tweepy.streaming:Received status: 1515731869647654924
+DEBUG:tweepy.streaming:Received status: 1515731869635162119
+DEBUG:tweepy.streaming:Received status: 1515731870444625921
+DEBUG:tweepy.streaming:Received status: 1515731870616596483
+DEBUG:tweepy.streaming:Received status: 1515731870671159298
+DEBUG:tweepy.streaming:Received status: 1515731871379898376
+DEBUG:tweepy.streaming:Received status: 1515731871426129924
+DEBUG:tweepy.streaming:Received status: 1515731872231342085
+DEBUG:tweepy.streaming:Received status: 1515731873447694350
+DEBUG:tweepy.streaming:Received status: 1515731873733005318
+DEBUG:tweepy.streaming:Received status: 1515731874164973573
+DEBUG:tweepy.streaming:Received status: 1515731874194378755
+DEBUG:tweepy.streaming:Received status: 1515731875112775680
+DEBUG:tweepy.streaming:Received status: 1515731876002029579
+DEBUG:tweepy.streaming:Received status: 1515731876211990531
+DEBUG:tweepy.streaming:Received status: 1515731876568133634
+DEBUG:tweepy.streaming:Received status: 1515731876572545028
+DEBUG:tweepy.streaming:Received status: 1515731877197676548
+DEBUG:tweepy.streaming:Received status: 1515731877876977667
+DEBUG:tweepy.streaming:Received status: 1515731878338211840
+DEBUG:tweepy.streaming:Received status: 1515731878535389190
+DEBUG:tweepy.streaming:Received status: 1515731879248416768
+DEBUG:tweepy.streaming:Received status: 1515731880645173255
+DEBUG:tweepy.streaming:Received status: 1515731881584640005
+DEBUG:tweepy.streaming:Received status: 1515731881635033096
+DEBUG:tweepy.streaming:Received status: 1515731881995681808
+DEBUG:tweepy.streaming:Received status: 1515731882108932097
+DEBUG:tweepy.streaming:Received status: 1515731882410921986
+DEBUG:tweepy.streaming:Received status: 1515731882528419843
+DEBUG:tweepy.streaming:Received status: 1515731883002318861
+DEBUG:tweepy.streaming:Received status: 1515731882767495172
+DEBUG:tweepy.streaming:Received status: 1515731883908288522
+DEBUG:tweepy.streaming:Received status: 1515731884910784512
+DEBUG:tweepy.streaming:Received status: 1515731885535678470
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '143121694327838002891650213674'), ('oauth_timestamp', '1650213674'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=143121694327838002891650213674&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213674&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D143121694327838002891650213674%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213674%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: dqFHv2bJ1X34WeWT0P0DxrAs6vk=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="143121694327838002891650213674", oauth_timestamp="1650213674", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="dqFHv2bJ1X34WeWT0P0DxrAs6vk%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received status: 1515732107565445126
+DEBUG:tweepy.streaming:Received status: 1515732107745714183
+DEBUG:tweepy.streaming:Received status: 1515732108022628361
+DEBUG:tweepy.streaming:Received status: 1515732109805207563
+DEBUG:tweepy.streaming:Received status: 1515732110543360003
+DEBUG:tweepy.streaming:Received status: 1515732110853746689
+DEBUG:tweepy.streaming:Received status: 1515732110966984708
+DEBUG:tweepy.streaming:Received status: 1515732111717773312
+DEBUG:tweepy.streaming:Received status: 1515732111843639306
+DEBUG:tweepy.streaming:Received status: 1515732111759745037
+DEBUG:tweepy.streaming:Received status: 1515732112040730638
+DEBUG:tweepy.streaming:Received status: 1515732112468750337
+DEBUG:tweepy.streaming:Received status: 1515732113588469763
+DEBUG:tweepy.streaming:Received status: 1515732113324007425
+DEBUG:tweepy.streaming:Received status: 1515732116650274823
+DEBUG:tweepy.streaming:Received status: 1515732116767707137
+DEBUG:tweepy.streaming:Received status: 1515732117099098132
+DEBUG:tweepy.streaming:Received status: 1515732117933670408
+DEBUG:tweepy.streaming:Received status: 1515732119049359368
+DEBUG:tweepy.streaming:Received status: 1515732119099686920
+DEBUG:tweepy.streaming:Received status: 1515732119766642693
+DEBUG:tweepy.streaming:Received status: 1515732119695335427
+DEBUG:tweepy.streaming:Received status: 1515732120815210498
+DEBUG:tweepy.streaming:Received status: 1515732121167757313
+DEBUG:tweepy.streaming:Received status: 1515732121532661769
+DEBUG:tweepy.streaming:Received status: 1515732121889177602
+DEBUG:tweepy.streaming:Received status: 1515732122241097728
+DEBUG:tweepy.streaming:Received status: 1515732122707050497
+DEBUG:tweepy.streaming:Received status: 1515732122853650433
+DEBUG:tweepy.streaming:Received status: 1515732122392215555
+DEBUG:tweepy.streaming:Received status: 1515732123881197573
+DEBUG:tweepy.streaming:Received status: 1515732123885490183
+DEBUG:tweepy.streaming:Received status: 1515732124044832775
+DEBUG:tweepy.streaming:Received status: 1515732124447371266
+DEBUG:tweepy.streaming:Received status: 1515732124493623302
+DEBUG:tweepy.streaming:Received status: 1515732125684748296
+DEBUG:tweepy.streaming:Received status: 1515732125579980801
+DEBUG:tweepy.streaming:Received status: 1515732125667966980
+DEBUG:tweepy.streaming:Received status: 1515732125915492359
+DEBUG:tweepy.streaming:Received status: 1515732127890952192
+DEBUG:tweepy.streaming:Received status: 1515732128054579206
+DEBUG:tweepy.streaming:Received status: 1515732128541159431
+DEBUG:tweepy.streaming:Received status: 1515732128641974272
+DEBUG:tweepy.streaming:Received status: 1515732129195634692
+DEBUG:tweepy.streaming:Received status: 1515732129329541120
+DEBUG:tweepy.streaming:Received status: 1515732129962811392
+DEBUG:tweepy.streaming:Received status: 1515732130999021571
+DEBUG:tweepy.streaming:Received status: 1515732131024146442
+DEBUG:tweepy.streaming:Received status: 1515732131162750980
+DEBUG:tweepy.streaming:Received status: 1515732131418456072
+DEBUG:tweepy.streaming:Received status: 1515732131493806082
+DEBUG:tweepy.streaming:Received status: 1515732131355500545
+DEBUG:tweepy.streaming:Received status: 1515732132416552960
+DEBUG:tweepy.streaming:Received status: 1515732132924215296
+DEBUG:tweepy.streaming:Received status: 1515732133158944771
+DEBUG:tweepy.streaming:Received status: 1515732133062578180
+DEBUG:tweepy.streaming:Received status: 1515732133280690184
+DEBUG:tweepy.streaming:Received status: 1515732134299848711
+DEBUG:tweepy.streaming:Received status: 1515732135520387082
+DEBUG:tweepy.streaming:Received status: 1515732135478534152
+DEBUG:tweepy.streaming:Received status: 1515732135637921793
+DEBUG:tweepy.streaming:Received status: 1515732136657141762
+DEBUG:tweepy.streaming:Received status: 1515732137168699395
+DEBUG:tweepy.streaming:Received status: 1515732137395331073
+DEBUG:tweepy.streaming:Received status: 1515732137739177992
+DEBUG:tweepy.streaming:Received status: 1515732137886076935
+DEBUG:tweepy.streaming:Received status: 1515732138301214722
+DEBUG:tweepy.streaming:Received status: 1515732138565451780
+DEBUG:tweepy.streaming:Received status: 1515732138590625792
+DEBUG:tweepy.streaming:Received status: 1515732138599059457
+DEBUG:tweepy.streaming:Received status: 1515732138825379844
+DEBUG:tweepy.streaming:Received status: 1515732139404374029
+DEBUG:tweepy.streaming:Received status: 1515732139794477059
+DEBUG:tweepy.streaming:Received status: 1515732140012486662
+DEBUG:tweepy.streaming:Received status: 1515732140180262916
+DEBUG:tweepy.streaming:Received status: 1515732140238987272
+DEBUG:tweepy.streaming:Received status: 1515732141237174272
+DEBUG:tweepy.streaming:Received status: 1515732141170114564
+DEBUG:tweepy.streaming:Received status: 1515732141644161032
+DEBUG:tweepy.streaming:Received status: 1515732142633930756
+DEBUG:tweepy.streaming:Received status: 1515732142818533386
+DEBUG:tweepy.streaming:Received status: 1515732142931779587
+DEBUG:tweepy.streaming:Received status: 1515732143472848896
+DEBUG:tweepy.streaming:Received status: 1515732144160755717
+DEBUG:tweepy.streaming:Received status: 1515732143799951363
+DEBUG:tweepy.streaming:Received status: 1515732144513032197
+DEBUG:tweepy.streaming:Received status: 1515732145314181136
+DEBUG:tweepy.streaming:Received status: 1515732145955819526
+DEBUG:tweepy.streaming:Received status: 1515732146832379904
+DEBUG:tweepy.streaming:Received status: 1515732147344183298
+DEBUG:tweepy.streaming:Received status: 1515732147373580289
+DEBUG:tweepy.streaming:Received status: 1515732148036292611
+DEBUG:tweepy.streaming:Received status: 1515732148090642433
+DEBUG:tweepy.streaming:Received status: 1515732149051211778
+DEBUG:tweepy.streaming:Received status: 1515732149558775808
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '112366931827303149451650213763'), ('oauth_timestamp', '1650213763'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=112366931827303149451650213763&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213763&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D112366931827303149451650213763%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213763%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: an9pW9AKWQLZvJu91Ad6rLQrOGg=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="112366931827303149451650213763", oauth_timestamp="1650213763", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="an9pW9AKWQLZvJu91Ad6rLQrOGg%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received status: 1515732479558225921
+DEBUG:tweepy.streaming:Received status: 1515732480568934403
+DEBUG:tweepy.streaming:Received status: 1515732480824913929
+DEBUG:tweepy.streaming:Received status: 1515732480753475587
+DEBUG:tweepy.streaming:Received status: 1515732481303101442
+DEBUG:tweepy.streaming:Received status: 1515732482154541069
+DEBUG:tweepy.streaming:Received status: 1515732482515165186
+DEBUG:tweepy.streaming:Received status: 1515732482657820673
+DEBUG:tweepy.streaming:Received status: 1515732482758516738
+DEBUG:tweepy.streaming:Received status: 1515732483169390592
+DEBUG:tweepy.streaming:Received status: 1515732483387576329
+DEBUG:tweepy.streaming:Received status: 1515732483853139969
+DEBUG:tweepy.streaming:Received status: 1515732483941502978
+DEBUG:tweepy.streaming:Received status: 1515732483890896905
+DEBUG:tweepy.streaming:Received status: 1515732484293644288
+DEBUG:tweepy.streaming:Received status: 1515732484654309389
+DEBUG:tweepy.streaming:Received status: 1515732484767592451
+DEBUG:tweepy.streaming:Received status: 1515732485719658496
+DEBUG:tweepy.streaming:Received status: 1515732485715505152
+DEBUG:tweepy.streaming:Received status: 1515732486029946882
+DEBUG:tweepy.streaming:Received status: 1515732486520672256
+DEBUG:tweepy.streaming:Received status: 1515732486927491075
+DEBUG:tweepy.streaming:Received status: 1515732487086895107
+DEBUG:tweepy.streaming:Received status: 1515732487183691780
+DEBUG:tweepy.streaming:Received status: 1515732487607324675
+DEBUG:tweepy.streaming:Received status: 1515732487682547715
+DEBUG:tweepy.streaming:Received status: 1515732488655716356
+DEBUG:tweepy.streaming:Received status: 1515732488559149066
+DEBUG:tweepy.streaming:Received status: 1515732488638717960
+DEBUG:tweepy.streaming:Received status: 1515732488932442115
+DEBUG:tweepy.streaming:Received status: 1515732489347641346
+DEBUG:tweepy.streaming:Received status: 1515732489880453125
+DEBUG:tweepy.streaming:Received status: 1515732490257842180
+DEBUG:tweepy.streaming:Received status: 1515732490505314307
+DEBUG:tweepy.streaming:Received status: 1515732491054759940
+DEBUG:tweepy.streaming:Received status: 1515732491453222920
+DEBUG:tweepy.streaming:Received status: 1515732491977515017
+DEBUG:tweepy.streaming:Received status: 1515732492308807682
+DEBUG:tweepy.streaming:Received status: 1515732493936300039
+DEBUG:tweepy.streaming:Received status: 1515732494293045248
+DEBUG:tweepy.streaming:Received status: 1515732494590836737
+DEBUG:tweepy.streaming:Received status: 1515732495035207685
+DEBUG:tweepy.streaming:Received status: 1515732495714586624
+DEBUG:tweepy.streaming:Received status: 1515732497157476359
+DEBUG:tweepy.streaming:Received status: 1515732499250393088
+DEBUG:tweepy.streaming:Received status: 1515732500009693190
+DEBUG:tweepy.streaming:Received status: 1515732500290674692
+DEBUG:tweepy.streaming:Received status: 1515732501154643980
+DEBUG:tweepy.streaming:Received status: 1515732502522048526
+DEBUG:tweepy.streaming:Received status: 1515732502781915137
+DEBUG:tweepy.streaming:Received status: 1515732504044572673
+DEBUG:tweepy.streaming:Received status: 1515732506477473792
+DEBUG:tweepy.streaming:Received status: 1515732506561200135
+DEBUG:tweepy.streaming:Received status: 1515732507140014087
+DEBUG:tweepy.streaming:Received status: 1515732508805152777
+DEBUG:tweepy.streaming:Received status: 1515732509010673670
+DEBUG:tweepy.streaming:Received status: 1515732509241356291
+DEBUG:tweepy.streaming:Received status: 1515732509476151305
+DEBUG:tweepy.streaming:Received status: 1515732509945995266
+DEBUG:tweepy.streaming:Received status: 1515732510071996420
+DEBUG:tweepy.streaming:Received status: 1515732510600216584
+DEBUG:tweepy.streaming:Received status: 1515732511095197705
+DEBUG:tweepy.streaming:Received status: 1515732510747021316
+DEBUG:tweepy.streaming:Received status: 1515732512181727233
+DEBUG:tweepy.streaming:Received status: 1515732512810713088
+DEBUG:tweepy.streaming:Received status: 1515732513217515528
+DEBUG:tweepy.streaming:Received status: 1515732513402109952
+DEBUG:tweepy.streaming:Received status: 1515732514513440771
+DEBUG:tweepy.streaming:Received status: 1515732514983321600
+DEBUG:tweepy.streaming:Received status: 1515732515004329984
+DEBUG:tweepy.streaming:Received status: 1515732515449114624
+DEBUG:tweepy.streaming:Received status: 1515732516484829186
+DEBUG:tweepy.streaming:Received status: 1515732517122420736
+DEBUG:tweepy.streaming:Received status: 1515732517210542085
+DEBUG:tweepy.streaming:Received status: 1515732518649094146
+DEBUG:tweepy.streaming:Received status: 1515732521484435464
+DEBUG:tweepy.streaming:Received status: 1515732522067451905
+DEBUG:tweepy.streaming:Received status: 1515732522361143298
+DEBUG:tweepy.streaming:Received status: 1515732523325612033
+DEBUG:tweepy.streaming:Received status: 1515732524281999360
+DEBUG:tweepy.streaming:Received status: 1515732524588158980
+DEBUG:tweepy.streaming:Received status: 1515732525678985217
+DEBUG:tweepy.streaming:Received status: 1515732526358315015
+DEBUG:tweepy.streaming:Received status: 1515732526568030209
+DEBUG:tweepy.streaming:Received status: 1515732526626910208
+DEBUG:tweepy.streaming:Received status: 1515732530242404357
+DEBUG:tweepy.streaming:Received status: 1515732531634753536
+DEBUG:tweepy.streaming:Received status: 1515732530850373640
+DEBUG:tweepy.streaming:Received status: 1515732531597180928
+DEBUG:tweepy.streaming:Received status: 1515732532330909704
+DEBUG:tweepy.streaming:Received status: 1515732532452593669
+DEBUG:tweepy.streaming:Received status: 1515732533207609350
+DEBUG:tweepy.streaming:Received status: 1515732536118415363
+DEBUG:tweepy.streaming:Received status: 1515732536344907786
+DEBUG:tweepy.streaming:Received status: 1515732537200418817
+DEBUG:tweepy.streaming:Received status: 1515732536999174149
+DEBUG:tweepy.streaming:Received status: 1515732537972297741
+DEBUG:tweepy.streaming:Received status: 1515732538194632709
+DEBUG:tweepy.streaming:Received status: 1515732538446467076
+DEBUG:tweepy.streaming:Received status: 1515732538438066179
+DEBUG:tweepy.streaming:Received status: 1515732537389481985
+DEBUG:tweepy.streaming:Received status: 1515732539595497487
+DEBUG:tweepy.streaming:Received status: 1515732540862398464
+DEBUG:tweepy.streaming:Received status: 1515732541868716032
+DEBUG:tweepy.streaming:Received status: 1515732542514630659
+DEBUG:tweepy.streaming:Received status: 1515732542355300354
+DEBUG:tweepy.streaming:Received status: 1515732542602764300
+DEBUG:tweepy.streaming:Received status: 1515732542841835529
+DEBUG:tweepy.streaming:Received status: 1515732544150462471
+DEBUG:tweepy.streaming:Received status: 1515732544246923281
+DEBUG:tweepy.streaming:Received status: 1515732544612073473
+DEBUG:tweepy.streaming:Received status: 1515732544829870086
+DEBUG:tweepy.streaming:Received status: 1515732545236836356
+DEBUG:tweepy.streaming:Received status: 1515732545622654978
+DEBUG:tweepy.streaming:Received status: 1515732545928900611
+DEBUG:tweepy.streaming:Received status: 1515732546545278976
+DEBUG:tweepy.streaming:Received status: 1515732547963084806
+DEBUG:tweepy.streaming:Received status: 1515732549095596046
+DEBUG:tweepy.streaming:Received status: 1515732549057843206
+DEBUG:tweepy.streaming:Received status: 1515732549926109188
+DEBUG:tweepy.streaming:Received status: 1515732550144167942
+DEBUG:tweepy.streaming:Received status: 1515732550693625856
+DEBUG:tweepy.streaming:Received status: 1515732553046577159
+DEBUG:tweepy.streaming:Received status: 1515732553319137283
+DEBUG:tweepy.streaming:Received status: 1515732553734393857
+DEBUG:tweepy.streaming:Received status: 1515732554124464132
+DEBUG:tweepy.streaming:Received status: 1515732554585980933
+DEBUG:tweepy.streaming:Received status: 1515732555060117506
+DEBUG:tweepy.streaming:Received status: 1515732556951572484
+DEBUG:tweepy.streaming:Received status: 1515732557152854020
+DEBUG:tweepy.streaming:Received status: 1515732557555331074
+DEBUG:tweepy.streaming:Received status: 1515732558713012224
+DEBUG:tweepy.streaming:Received status: 1515732559145095175
+DEBUG:tweepy.streaming:Received status: 1515732559476494336
+DEBUG:tweepy.streaming:Received status: 1515732560688549888
+DEBUG:tweepy.streaming:Received status: 1515732561397436417
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '85306417324573472141650213811'), ('oauth_timestamp', '1650213811'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=85306417324573472141650213811&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213811&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D85306417324573472141650213811%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213811%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: pY2UEmBUUz/hV65NCz9oguBGH0Y=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="85306417324573472141650213811", oauth_timestamp="1650213811", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="pY2UEmBUUz%2FhV65NCz9oguBGH0Y%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received status: 1515732682952617993
+DEBUG:tweepy.streaming:Received status: 1515732683279716358
+DEBUG:tweepy.streaming:Received status: 1515732683908952069
+DEBUG:tweepy.streaming:Received status: 1515732684194017280
+DEBUG:tweepy.streaming:Received status: 1515732684840046593
+DEBUG:tweepy.streaming:Received status: 1515732685972557824
+DEBUG:tweepy.streaming:Received status: 1515732686052241410
+DEBUG:tweepy.streaming:Received status: 1515732688438804491
+DEBUG:tweepy.streaming:Received status: 1515732688614961160
+DEBUG:tweepy.streaming:Received status: 1515732689055371264
+DEBUG:tweepy.streaming:Received status: 1515732689365704705
+DEBUG:tweepy.streaming:Received status: 1515732689663442944
+DEBUG:tweepy.streaming:Received status: 1515732690884075521
+DEBUG:tweepy.streaming:Received status: 1515732691236401154
+DEBUG:tweepy.streaming:Received status: 1515732691941003272
+DEBUG:tweepy.streaming:Received status: 1515732692029034498
+DEBUG:tweepy.streaming:Received status: 1515732693140529165
+DEBUG:tweepy.streaming:Received status: 1515732693325172740
+DEBUG:tweepy.streaming:Received status: 1515732693383790598
+DEBUG:tweepy.streaming:Received status: 1515732693765754880
+DEBUG:tweepy.streaming:Received status: 1515732694818336782
+DEBUG:tweepy.streaming:Received status: 1515732695074156546
+DEBUG:tweepy.streaming:Received status: 1515732695237730308
+DEBUG:tweepy.streaming:Received status: 1515732696894427147
+DEBUG:tweepy.streaming:Received status: 1515732697364275202
+DEBUG:tweepy.streaming:Received status: 1515732697678848006
+DEBUG:tweepy.streaming:Received status: 1515732697901154310
+DEBUG:tweepy.streaming:Received status: 1515732698433671168
+DEBUG:tweepy.streaming:Received status: 1515732698609856519
+DEBUG:tweepy.streaming:Received status: 1515732698647699465
+DEBUG:tweepy.streaming:Received status: 1515732698899398664
+DEBUG:tweepy.streaming:Received status: 1515732699419451404
+DEBUG:tweepy.streaming:Received status: 1515732700283666436
+DEBUG:tweepy.streaming:Received status: 1515732700489039873
+DEBUG:tweepy.streaming:Received status: 1515732700858134531
+DEBUG:tweepy.streaming:Received status: 1515732701218758658
+DEBUG:tweepy.streaming:Received status: 1515732701147500547
+DEBUG:tweepy.streaming:Received status: 1515732701499830272
+DEBUG:tweepy.streaming:Received status: 1515732702032539654
+DEBUG:tweepy.streaming:Received status: 1515732703257276419
+DEBUG:tweepy.streaming:Received status: 1515732703324344322
+DEBUG:tweepy.streaming:Received status: 1515732703819464705
+DEBUG:tweepy.streaming:Received status: 1515732704267948032
+DEBUG:tweepy.streaming:Received status: 1515732703617990663
+DEBUG:tweepy.streaming:Received status: 1515732705471832064
+DEBUG:tweepy.streaming:Received status: 1515732705752891402
+DEBUG:tweepy.streaming:Received status: 1515732706096734210
+DEBUG:tweepy.streaming:Received status: 1515732706688180226
+DEBUG:tweepy.streaming:Received status: 1515732707292200961
+DEBUG:tweepy.streaming:Received status: 1515732707627700232
+DEBUG:tweepy.streaming:Received status: 1515732707975778307
+DEBUG:tweepy.streaming:Received status: 1515732708223340550
+DEBUG:tweepy.streaming:Received status: 1515732708676145155
+DEBUG:tweepy.streaming:Received status: 1515732708483289094
+DEBUG:tweepy.streaming:Received status: 1515732711214059523
+DEBUG:tweepy.streaming:Received status: 1515732711146668038
+DEBUG:tweepy.streaming:Received status: 1515732712337907718
+DEBUG:tweepy.streaming:Received status: 1515732712371507209
+DEBUG:tweepy.streaming:Received status: 1515732712425984007
+DEBUG:tweepy.streaming:Received status: 1515732713478701058
+DEBUG:tweepy.streaming:Received status: 1515732715173302278
+DEBUG:tweepy.streaming:Received status: 1515732715773042688
+DEBUG:tweepy.streaming:Received status: 1515732716356001801
+DEBUG:tweepy.streaming:Received status: 1515732716821561345
+DEBUG:tweepy.streaming:Received status: 1515732717199142922
+DEBUG:tweepy.streaming:Received status: 1515732717593317381
+DEBUG:tweepy.streaming:Received status: 1515732717568237573
+DEBUG:tweepy.streaming:Received status: 1515732718180519941
+DEBUG:tweepy.streaming:Received status: 1515732719334211587
+DEBUG:tweepy.streaming:Received status: 1515732720671940615
+DEBUG:tweepy.streaming:Received status: 1515732721796096002
+DEBUG:tweepy.streaming:Received status: 1515732722047672320
+DEBUG:tweepy.streaming:Received status: 1515732722223915021
+DEBUG:tweepy.streaming:Received status: 1515732722316103680
+DEBUG:tweepy.streaming:Received status: 1515732723259826181
+DEBUG:tweepy.streaming:Received status: 1515732723494756353
+DEBUG:tweepy.streaming:Received status: 1515732723373064193
+DEBUG:tweepy.streaming:Received status: 1515732725319172096
+DEBUG:tweepy.streaming:Received status: 1515732725465944065
+DEBUG:tweepy.streaming:Received status: 1515732725491290117
+DEBUG:tweepy.streaming:Received status: 1515732726359498760
+DEBUG:tweepy.streaming:Received status: 1515732725822816256
+DEBUG:tweepy.streaming:Received status: 1515732726892146697
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '52856892306921646691650213847'), ('oauth_timestamp', '1650213847'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=52856892306921646691650213847&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213847&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D52856892306921646691650213847%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213847%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: DgeIk1+68QwY1B1DwP3+ayXVpHA=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="52856892306921646691650213847", oauth_timestamp="1650213847", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="DgeIk1%2B68QwY1B1DwP3%2BayXVpHA%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received status: 1515732832831873025
+DEBUG:tweepy.streaming:Received status: 1515732833255530498
+DEBUG:tweepy.streaming:Received status: 1515732833897172995
+DEBUG:tweepy.streaming:Received status: 1515732835038076936
+DEBUG:tweepy.streaming:Received status: 1515732835281289218
+DEBUG:tweepy.streaming:Received status: 1515732834752897030
+DEBUG:tweepy.streaming:Received status: 1515732832534024202
+DEBUG:tweepy.streaming:Received status: 1515732836594204673
+DEBUG:tweepy.streaming:Received status: 1515732836774518785
+DEBUG:tweepy.streaming:Received status: 1515732837680529415
+DEBUG:tweepy.streaming:Received status: 1515732837936283657
+DEBUG:tweepy.streaming:Received status: 1515732838615818245
+DEBUG:tweepy.streaming:Received status: 1515732839211290625
+DEBUG:tweepy.streaming:Received status: 1515732840167751689
+DEBUG:tweepy.streaming:Received status: 1515732840549335041
+DEBUG:tweepy.streaming:Received status: 1515732841656688640
+DEBUG:tweepy.streaming:Received status: 1515732842122153987
+DEBUG:tweepy.streaming:Received status: 1515732842185207814
+DEBUG:tweepy.streaming:Received status: 1515732842654797827
+DEBUG:tweepy.streaming:Received status: 1515732842982305793
+DEBUG:tweepy.streaming:Received status: 1515732842990481411
+DEBUG:tweepy.streaming:Received status: 1515732843720237060
+DEBUG:tweepy.streaming:Received status: 1515732843724386304
+DEBUG:tweepy.streaming:Received status: 1515732843711893514
+DEBUG:tweepy.streaming:Received status: 1515732843783204864
+DEBUG:tweepy.streaming:Received status: 1515732843971985409
+DEBUG:tweepy.streaming:Received status: 1515732844269686789
+DEBUG:tweepy.streaming:Received status: 1515732844265582600
+DEBUG:tweepy.streaming:Received status: 1515732844802281475
+DEBUG:tweepy.streaming:Received status: 1515732844953415684
+DEBUG:tweepy.streaming:Received status: 1515732845855133699
+DEBUG:tweepy.streaming:Received status: 1515732846094303239
+DEBUG:tweepy.streaming:Received status: 1515732847197401096
+DEBUG:tweepy.streaming:Received status: 1515732847222480896
+DEBUG:tweepy.streaming:Received status: 1515732848434577408
+DEBUG:tweepy.streaming:Received status: 1515732850217213955
+DEBUG:tweepy.streaming:Received status: 1515732850103898118
+DEBUG:tweepy.streaming:Received status: 1515732849642590210
+DEBUG:tweepy.streaming:Received status: 1515732851081334800
+DEBUG:tweepy.streaming:Received status: 1515732851026669570
+DEBUG:tweepy.streaming:Received status: 1515732851777548295
+DEBUG:tweepy.streaming:Received status: 1515732851735801862
+DEBUG:tweepy.streaming:Received status: 1515732852092313601
+DEBUG:tweepy.streaming:Received status: 1515732852859715592
+DEBUG:tweepy.streaming:Received status: 1515732853480431625
+DEBUG:tweepy.streaming:Received status: 1515732854260604928
+DEBUG:tweepy.streaming:Received status: 1515732854050799630
+DEBUG:tweepy.streaming:Received status: 1515732855510474752
+DEBUG:tweepy.streaming:Received status: 1515732855560810506
+DEBUG:tweepy.streaming:Received status: 1515732855346900994
+DEBUG:tweepy.streaming:Received status: 1515732856445804546
+DEBUG:tweepy.streaming:Received status: 1515732856857063424
+DEBUG:tweepy.streaming:Received status: 1515732856928182282
+DEBUG:tweepy.streaming:Received status: 1515732857322364929
+DEBUG:tweepy.streaming:Received status: 1515732857452384266
+DEBUG:tweepy.streaming:Received status: 1515732857842540545
+DEBUG:tweepy.streaming:Received status: 1515732857884676097
+DEBUG:tweepy.streaming:Received status: 1515732857997885440
+DEBUG:tweepy.streaming:Received status: 1515732858589036546
+DEBUG:tweepy.streaming:Received status: 1515732859692232712
+DEBUG:tweepy.streaming:Received status: 1515732859922927618
+DEBUG:tweepy.streaming:Received status: 1515732860531277827
+DEBUG:tweepy.streaming:Received status: 1515732860526731264
+DEBUG:tweepy.streaming:Received status: 1515732860749365249
+DEBUG:tweepy.streaming:Received status: 1515732860984041477
+DEBUG:tweepy.streaming:Received status: 1515732861399482369
+DEBUG:tweepy.streaming:Received status: 1515732863928442884
+DEBUG:tweepy.streaming:Received status: 1515732864465264646
+DEBUG:tweepy.streaming:Received status: 1515732864704389129
+DEBUG:tweepy.streaming:Received status: 1515732864771530761
+DEBUG:tweepy.streaming:Received status: 1515732865006321664
+DEBUG:tweepy.streaming:Received status: 1515732867048955915
+DEBUG:tweepy.streaming:Received status: 1515732867397169157
+DEBUG:tweepy.streaming:Received status: 1515732867514572807
+DEBUG:tweepy.streaming:Received status: 1515732868156301312
+DEBUG:tweepy.streaming:Received status: 1515732869263814656
+DEBUG:tweepy.streaming:Received status: 1515732870266040328
+DEBUG:tweepy.streaming:Received status: 1515732870068936710
+DEBUG:tweepy.streaming:Received status: 1515732872103178243
+DEBUG:tweepy.streaming:Received status: 1515732872111562757
+DEBUG:tweepy.streaming:Received status: 1515732872581337091
+DEBUG:tweepy.streaming:Received status: 1515732873940127749
+DEBUG:tweepy.streaming:Received status: 1515732874292600842
+DEBUG:tweepy.streaming:Received status: 1515732875022323719
+DEBUG:tweepy.streaming:Received status: 1515732875672494089
+DEBUG:tweepy.streaming:Received status: 1515732876049928192
+DEBUG:tweepy.streaming:Received status: 1515732877127860224
+DEBUG:tweepy.streaming:Received status: 1515732877245566977
+DEBUG:tweepy.streaming:Received status: 1515732879405293570
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '170717949191804508251650213976'), ('oauth_timestamp', '1650213976'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=170717949191804508251650213976&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213976&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D170717949191804508251650213976%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213976%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: X0s5UF1Kz1FA/EpLbNTYWLlZGZc=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="170717949191804508251650213976", oauth_timestamp="1650213976", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="X0s5UF1Kz1FA%2FEpLbNTYWLlZGZc%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '32106703661143992071650213989'), ('oauth_timestamp', '1650213989'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=32106703661143992071650213989&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650213989&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D32106703661143992071650213989%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650213989%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: VXXnB8G14HhbaZ6GyC14UX5LPwI=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="32106703661143992071650213989", oauth_timestamp="1650213989", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="VXXnB8G14HhbaZ6GyC14UX5LPwI%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '43349604554746853501650214231'), ('oauth_timestamp', '1650214231'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car'), ('language', 'e,n')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: language=e%2Cn&oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=43349604554746853501650214231&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650214231&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&language%3De%252Cn%26oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D43349604554746853501650214231%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650214231%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: Utpr7K2J5Q/M2ZYl0t7w/y3UD/k=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'24', b'Authorization': b'OAuth oauth_nonce="43349604554746853501650214231", oauth_timestamp="1650214231", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="Utpr7K2J5Q%2FM2ZYl0t7w%2Fy3UD%2Fk%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car&language=e%2Cn'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+DEBUG:tweepy.streaming:Received keep-alive signal
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '37219892840579453891650214271'), ('oauth_timestamp', '1650214271'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=37219892840579453891650214271&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650214271&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D37219892840579453891650214271%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650214271%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: a37triX01q5t89W7L9WNExR9TW4=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'9', b'Authorization': b'OAuth oauth_nonce="37219892840579453891650214271", oauth_timestamp="1650214271", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="a37triX01q5t89W7L9WNExR9TW4%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+INFO:tweepy.streaming:Stream disconnected
+INFO:root:Started
+DEBUG:requests_oauthlib.oauth1_auth:Signing request <PreparedRequest [POST]> using client <Client client_key=6wiX7IqnZKHetMISzcYIsTl3l, client_secret=****, resource_owner_key=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj, resource_owner_secret=****, signature_method=HMAC-SHA1, signature_type=AUTH_HEADER, callback_uri=None, rsa_key=None, verifier=None, realm=None, encoding=utf-8, decoding=utf-8, nonce=None, timestamp=None>
+DEBUG:requests_oauthlib.oauth1_auth:Including body in call to sign: True
+DEBUG:oauthlib.oauth1.rfc5849:Collected params: [('oauth_nonce', '127886973252203638221650214286'), ('oauth_timestamp', '1650214286'), ('oauth_version', '1.0'), ('oauth_signature_method', 'HMAC-SHA1'), ('oauth_consumer_key', '6wiX7IqnZKHetMISzcYIsTl3l'), ('oauth_token', '2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj'), ('track', 'car'), ('language', 'en')]
+DEBUG:oauthlib.oauth1.rfc5849:Normalized params: language=en&oauth_consumer_key=6wiX7IqnZKHetMISzcYIsTl3l&oauth_nonce=127886973252203638221650214286&oauth_signature_method=HMAC-SHA1&oauth_timestamp=1650214286&oauth_token=2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj&oauth_version=1.0&track=car
+DEBUG:oauthlib.oauth1.rfc5849:Normalized URI: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:oauthlib.oauth1.rfc5849:Signing: signature base string: POST&https%3A%2F%2Fstream.twitter.com%2F1.1%2Fstatuses%2Ffilter.json&language%3Den%26oauth_consumer_key%3D6wiX7IqnZKHetMISzcYIsTl3l%26oauth_nonce%3D127886973252203638221650214286%26oauth_signature_method%3DHMAC-SHA1%26oauth_timestamp%3D1650214286%26oauth_token%3D2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj%26oauth_version%3D1.0%26track%3Dcar
+DEBUG:oauthlib.oauth1.rfc5849:Signature: wDQfxkmxHqV1+OgIQvr6xdEQjm4=
+DEBUG:oauthlib.oauth1.rfc5849:Encoding URI, headers and body to utf-8.
+DEBUG:requests_oauthlib.oauth1_auth:Updated url: https://stream.twitter.com/1.1/statuses/filter.json
+DEBUG:requests_oauthlib.oauth1_auth:Updated headers: {b'User-Agent': b'Python/3.8.5 Requests/2.27.1 Tweepy/4.8.0', b'Accept-Encoding': b'gzip, deflate', b'Accept': b'*/*', b'Connection': b'keep-alive', b'Content-Type': b'application/x-www-form-urlencoded', b'Content-Length': b'21', b'Authorization': b'OAuth oauth_nonce="127886973252203638221650214286", oauth_timestamp="1650214286", oauth_version="1.0", oauth_signature_method="HMAC-SHA1", oauth_consumer_key="6wiX7IqnZKHetMISzcYIsTl3l", oauth_token="2182214210-PmRGeJVKPQnDz7ft7thPHdGVH94sqiur5YEjPKj", oauth_signature="wDQfxkmxHqV1%2BOgIQvr6xdEQjm4%3D"'}
+DEBUG:requests_oauthlib.oauth1_auth:Updated body: b'track=car&language=en'
+DEBUG:urllib3.connectionpool:Starting new HTTPS connection (1): stream.twitter.com:443
+DEBUG:urllib3.connectionpool:https://stream.twitter.com:443 "POST /1.1/statuses/filter.json HTTP/1.1" 200 None
+INFO:tweepy.streaming:Stream connected
+INFO:tweepy.streaming:Stream disconnected
