@@ -1,0 +1,9 @@
+happy -0.034
+potato 0.001
+apple -0.005
+banana 0.007
+testing 0.098
+sad 0.12
+born 0.15
+vile 0.22
+creak 0.32

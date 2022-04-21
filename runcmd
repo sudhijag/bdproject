@@ -1,0 +1,18 @@
+#Launch 1
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+#Launch 2
+bin/kafka-server-start.sh config/server.properties
+
+#Create a topic
+bin/kafka-topics.sh --create --topic finaltopic --bootstrap-server localhost:9092 
+bin/kafka-topics.sh --create --topic test --bootstrap-server localhost:9092 
+
+
+#Logstash command
+bin/logstash -f logstash.conf
+
+#Run programs
+sh /Users/Hema/Library/Python/3.8/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 /Users/Hema/bdproject/tweetfetcher.py test localhost:9092
+
+sh /Users/Hema/Library/Python/3.8/bin/spark-submit --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.1.1 /Users/Hema/bdproject/tweetanalyzer.py localhost:9092 covid test finaltopic
