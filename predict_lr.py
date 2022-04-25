@@ -1,12 +1,16 @@
 from collections import Counter
 import numpy as np
 from scipy.special import softmax
-
-
 import string
 import nltk
+nltk.download('punkt')
+nltk.download('stopwords')
 from nltk.corpus import stopwords
+
 url_path = "https://raw.githubusercontent.com/mandalbiswadip/data_storage/main/log_regression_weights/"
+
+stop_words=set(stopwords.words('english'))
+
 
 unique_words = None
 W = None
@@ -100,7 +104,7 @@ def preprocessing_tweets(tweet) :
 	#remove stopwords
 	cleantokens3= []
 	for el in cleantokens2:
-		if el not in STOP_WORDS:
+		if el not in STOP_WORDS and el not in stop_words:
 			cleantokens3.append(el)
 
 # 	print("TWEET after removing", cleantokens3)
@@ -168,6 +172,7 @@ def get_prediction(tweet):
 	feature = get_tfidf(preprocessing_tweets(tweet))
 	return predict(feature)
 
+if __name__ == "__main__":
 
-tweet = "Twitter is bought by elon musk"
-print(get_prediction(tweet))
+	tweet = "Twitter is bought by elon musk"
+	print(get_prediction(tweet))
