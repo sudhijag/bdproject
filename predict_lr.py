@@ -1,13 +1,18 @@
 from collections import Counter
+
 import numpy as np
-from scipy.special import softmax
 import string
+import requests
 import nltk
 nltk.download('punkt')
 nltk.download('stopwords')
 from nltk.corpus import stopwords
+from scipy.special import softmax
 
 url_path = "https://raw.githubusercontent.com/mandalbiswadip/data_storage/main/log_regression_weights/"
+l1_url_path = "https://raw.githubusercontent.com/mandalbiswadip/data_storage/main/log_regression_weights_l1/"
+l2_url_path = "https://raw.githubusercontent.com/mandalbiswadip/data_storage/main/log_regression_weights_l2/"
+
 
 stop_words=set(stopwords.words('english'))
 
@@ -16,6 +21,16 @@ unique_words = None
 W = None
 idf_dict = None
 word_index_dict = None
+
+l1_unique_words = None
+l1_W = None
+l1_idf_dict = None
+l1_word_index_dict = None
+
+l2_unique_words = None
+l2_W = None
+l2_idf_dict = None
+l2_word_index_dict = None
 
 STOP_WORDS = set(
     """
@@ -114,51 +129,46 @@ def preprocessing_tweets(tweet) :
 	return " ".join(cleantokens3)
 
 
-def read_file(filename):
-	import requests
-
-	response = requests.get(f"{url_path}/{filename}")
+def read_file(filename, url):
+	response = requests.get(f"{url}/{filename}")
 	data = response.text
 	return data
 
-def load_idf_dict():
-    return {line.split()[0]: float(line.split()[1]) for line in read_file("idf_dict.txt").splitlines()}
+def load_idf_dict(url):
+    return {line.split()[0]: float(line.split()[1]) for line in read_file("idf_dict.txt", url).splitlines()}
 
-def load_word_list():
-    return read_file("vocab.txt").splitlines()
+def load_word_list(url):
+    return read_file("vocab.txt", url).splitlines()
 
-def load_weights():
-    weight_text = read_file("weights.txt")
+def load_weights(url):
+    weight_text = read_file("weights.txt", url)
     return np.array(
         [[float(y) for y in x.split("\t")] for x in weight_text.splitlines()]
     )
 
 
-def load_model():
-	global unique_words
-	global W
-	global idf_dict
-	global word_index_dict
-	unique_words = load_word_list()
-	W = load_weights()
-	idf_dict = load_idf_dict()
+def load_model(url):
+	u_w_temp = load_word_list(url)
+	W_temp = load_weights(url)
+	idf_dict_temp = load_idf_dict(url)
 
 
-	word_index_dict = dict()
-	for index, word in enumerate(unique_words):
-		word_index_dict[word] = index
+	word_index_dict_temp = dict()
+	for index, word in enumerate(u_w_temp):
+		word_index_dict_temp[word] = index
+	return u_w_temp, W_temp, idf_dict_temp, word_index_dict_temp
 
-def get_tfidf(sentence):
+def get_tfidf(sentence, unique_words_p, idf_dict_p, word_index_dict_p):
     words = nltk.word_tokenize(sentence)
-    vec = np.zeros(len(unique_words) + 1)
+    vec = np.zeros(len(unique_words_p) + 1)
     vec[-1] = 1 # this is for the bias term
 
     for word, v in Counter(words).items():
-        if word in word_index_dict:
-            vec[word_index_dict[word]] = v * idf_dict[word]
+        if word in word_index_dict_p:
+            vec[word_index_dict_p[word]] = v * idf_dict_p[word]
     return vec
 
-predict = lambda x: np.argmax(softmax(- x @ W))
+predict = lambda x, weight: np.argmax(softmax(- x @ weight))
 
 def get_prediction(tweet):
 	global unique_words
@@ -167,12 +177,36 @@ def get_prediction(tweet):
 	global word_index_dict
 
 	if unique_words is None:
-		load_model()
-	print(tweet)
-	feature = get_tfidf(preprocessing_tweets(tweet))
-	return predict(feature)
+		unique_words, W, idf_dict, word_index_dict = load_model(url_path)
+	feature = get_tfidf(preprocessing_tweets(tweet), unique_words, idf_dict, word_index_dict)
+	return predict(feature, W)
+
+def get_prediction_l1(tweet):
+
+	global l1_unique_words
+	global l1_W
+	global l1_idf_dict
+	global l1_word_index_dict
+
+	if unique_words is None:
+		l1_unique_words, l1_W, l1_idf_dict, l1_word_index_dict = load_model(l1_url_path)
+	feature = get_tfidf(preprocessing_tweets(tweet), l1_unique_words, l1_idf_dict, l1_word_index_dict)
+	return predict(feature, l1_W)
+
+def get_prediction_l2(tweet):
+	global l2_unique_words
+	global l2_W
+	global l2_idf_dict
+	global l2_word_index_dict
+
+	if unique_words is None:
+		l2_unique_words, l2_W, l2_idf_dict, l2_word_index_dict = load_model(l2_url_path)
+	feature = get_tfidf(preprocessing_tweets(tweet), l2_unique_words, l2_idf_dict, l2_word_index_dict)
+	return predict(feature, l2_W)
+
 
 if __name__ == "__main__":
 
 	tweet = "Twitter is bought by elon musk"
-	print(get_prediction(tweet))
+	print(tweet)
+	print(get_prediction_l2(tweet))
